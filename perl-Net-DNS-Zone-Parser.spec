@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	DNS-Zone-Parser
-Summary:	Net::DNS::Zone::Parser - A Zone Pre-Parser
+Summary:	Net::DNS::Zone::Parser - a zone pre-parser
 Summary(pl):	Net::DNS::Zope::Parser - preparser stref
 Name:		perl-Net-DNS-Zone-Parser
 Version:	0.002
