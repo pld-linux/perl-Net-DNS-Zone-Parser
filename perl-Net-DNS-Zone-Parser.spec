@@ -6,7 +6,7 @@
 %define	pdir	Net
 %define	pnam	DNS-Zone-Parser
 Summary:	Net::DNS::Zone::Parser - A Zone Pre-Parser
-#Summary(pl):	
+Summary(pl):	Net::DNS::Zope::Parser - preparser stref
 Name:		perl-Net-DNS-Zone-Parser
 Version:	0.002
 Release:	1
@@ -29,17 +29,25 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The Net::DNS::Zone::Parser should be considered a preprocessor that
 "normalizes" a zonefile.
 
-It will read a zonefile in a format conforming to the relevant RFCs with
-the addition of BIND's GENERATE directive from disk and will write fully
-specified resource records (RRs) to a filehandle.
+It will read a zonefile in a format conforming to the relevant RFCs
+with the addition of BIND's GENERATE directive from disk and will
+write fully specified resource records (RRs) to a filehandle.
 
-Note that this module does not have a notion of what constitutes a valid
-zone; it only parses. For example, the parser will happilly parse RRs
-with ownernames that are below in another zone because a NS RR elsewhere
-in the zone.
+Note that this module does not have a notion of what constitutes a
+valid zone; it only parses. For example, the parser will happilly
+parse RRs with ownernames that are below in another zone because a NS
+RR elsewhere in the zone.
 
-# %description -l pl
-# TODO
+%description -l pl
+Net::DNS::Zone::Parser powinien byæ uwa¿any za preprocesor
+"normalizuj±cy" pliki stref. Czyta on z dysku plik strefy w formacie
+zgodnym z odpowiednimi RFC oraz dyrektyw± BIND-a GENERATE i zapisuje
+w pe³ni okre¶lone rekordy zasobów (RR) do uchwytu pliku.
+
+Nale¿y zauwa¿yæ, ¿e ten modu³ nie ma pojêcia o tym, co stanowi
+poprawn± strefê; on jedynie przetwarza. Na przyk³ad parser ten
+pomy¶lnie przetworzy rekordy z nazwami w³a¶cicieli bêd±cymi poni¿ej
+w innej strefie z powodu rekordów NS w innym miejscu strefy.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
