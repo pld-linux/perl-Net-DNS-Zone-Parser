@@ -6,7 +6,7 @@
 %define	pdir	Net
 %define	pnam	DNS-Zone-Parser
 Summary:	Net::DNS::Zone::Parser - a zone pre-parser
-Summary(pl.UTF-8):   Net::DNS::Zope::Parser - preparser stref
+Summary(pl.UTF-8):	Net::DNS::Zope::Parser - preparser stref
 Name:		perl-Net-DNS-Zone-Parser
 Version:	0.002
 Release:	1
