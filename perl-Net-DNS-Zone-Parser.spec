@@ -9,7 +9,7 @@ Summary:	Net::DNS::Zone::Parser - a zone pre-parser
 Summary(pl.UTF-8):	Net::DNS::Zope::Parser - preparser stref
 Name:		perl-Net-DNS-Zone-Parser
 Version:	0.002
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -41,13 +41,13 @@ RR elsewhere in the zone.
 %description -l pl.UTF-8
 Net::DNS::Zone::Parser powinien być uważany za preprocesor
 "normalizujący" pliki stref. Czyta on z dysku plik strefy w formacie
-zgodnym z odpowiednimi RFC oraz dyrektywą BIND-a GENERATE i zapisuje
-w pełni określone rekordy zasobów (RR) do uchwytu pliku.
+zgodnym z odpowiednimi RFC oraz dyrektywą BIND-a GENERATE i zapisuje w
+pełni określone rekordy zasobów (RR) do uchwytu pliku.
 
 Należy zauważyć, że ten moduł nie ma pojęcia o tym, co stanowi
 poprawną strefę; on jedynie przetwarza. Na przykład parser ten
-pomyślnie przetworzy rekordy z nazwami właścicieli będącymi poniżej
-w innej strefie z powodu rekordów NS w innym miejscu strefy.
+pomyślnie przetworzy rekordy z nazwami właścicieli będącymi poniżej w
+innej strefie z powodu rekordów NS w innym miejscu strefy.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -71,5 +71,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES TODO
+%dir %{perl_vendorlib}/Net/DNS/Zone
 %{perl_vendorlib}/Net/DNS/Zone/*.pm
 %{_mandir}/man3/*
