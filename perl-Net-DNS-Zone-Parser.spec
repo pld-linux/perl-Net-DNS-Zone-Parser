@@ -6,14 +6,15 @@
 %define	pdir	Net
 %define	pnam	DNS-Zone-Parser
 Summary:	Net::DNS::Zone::Parser - a zone pre-parser
-Summary(pl.UTF-8):	Net::DNS::Zope::Parser - preparser stref
+Summary(pl.UTF-8):	Net::DNS::Zope::Parser - preprocesor stref
 Name:		perl-Net-DNS-Zone-Parser
 Version:	0.002
 Release:	2
 License:	BSD-like
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Net/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	849d8fa00b82da2dc29ec6bf909f4c13
+URL:		http://search.cpan.org/dist/Net-DNS-Zone-Parser/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -45,7 +46,7 @@ zgodnym z odpowiednimi RFC oraz dyrektywą BIND-a GENERATE i zapisuje w
 pełni określone rekordy zasobów (RR) do uchwytu pliku.
 
 Należy zauważyć, że ten moduł nie ma pojęcia o tym, co stanowi
-poprawną strefę; on jedynie przetwarza. Na przykład parser ten
+poprawną strefę; on jedynie przetwarza. Na przykład analizator ten
 pomyślnie przetworzy rekordy z nazwami właścicieli będącymi poniżej w
 innej strefie z powodu rekordów NS w innym miejscu strefy.
 
