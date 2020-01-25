@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests		# perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	DNS-Zone-Parser
 Summary:	Net::DNS::Zone::Parser - a zone pre-parser
